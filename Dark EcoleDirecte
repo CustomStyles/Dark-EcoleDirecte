@@ -22,6 +22,27 @@ a:hover {
 .version-site {
     color: #595959;
 }
+.form-control,
+.page-messagerie .search input,
+.page-messagerie .search button,
+.page-messagerie .refresh .btn {
+    background: #333;
+    border: none;
+    color: white;
+}
+.dropdown-menu {
+    background: #333;
+    border: none;
+    width: 100%;
+}
+.dropdown-menu > li > a {
+    color: white;
+}
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+    background: #333;
+    color: #ccc;
+}
 
 .login-container #bloc-connexion input[type="password"],
 .login-container #bloc-connexion input[type="text"],
@@ -57,7 +78,8 @@ a:hover {
     background: #111;
 }
 
-.container-bg {
+.container-bg,
+.modal-content {
     background: #242424;
     border: 0;
     box-shadow: none;
@@ -71,17 +93,52 @@ a:hover {
 .nav-tabs {
     border-bottom: 0;
 }
-.nav-tabs > li > a {
-    border: 1px solid #3a3a3a;
+.nav-tabs > li {
+    margin: 0;
 }
-.nav-tabs.no-shadow > li.active > a {
+.nav-tabs > li > a,
+.btn-default {
+    border: 1px solid #3a3a3a;
+    color: #a8a8a8;
+}
+.nav-tabs > li > a {
+    border-radius: 0;
+}
+.nav-tabs > li:first-child > a {
+    border-top-left-radius: 4px;
+}
+.nav-tabs > li:last-child > a {
+    border-top-right-radius: 4px;
+}
+.nav-tabs.no-shadow > li.active > a,
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover,
+.btn-default.active,
+.btn-default.active.focus,
+.btn-default.active:focus,
+.btn-default.active:hover,
+.btn-default:active,
+.btn-default:active.focus,
+.btn-default:active:focus,
+.btn-default:active:hover,
+.open > .dropdown-toggle.btn-default,
+.open > .dropdown-toggle.btn-default.focus,
+.open > .dropdown-toggle.btn-default:focus,
+.open > .dropdown-toggle.btn-default:hover,
+.btn-danger-color,
+.btn-danger-color:focus,
+.btn-danger-color:hover {
     border-color: transparent;
     box-shadow: none;
     color: white;
     background: #6399ff;
 }
-.nav-tabs-container-bg > li > a:hover {
-    background: transparent;
+.nav-tabs-container-bg > li > a:hover,
+.btn-default:hover {
+    background: #5677b7;
+    color: white;
+    border-color: transparent;
 }
 .nav-tabs > li.active::after {
     display: none;
@@ -143,7 +200,58 @@ a:hover {
 .page-messagerie .un-message:hover {
     background: #4b4b4b;
 }
+.page-messagerie .search input {
+    width: 20vw;
+}
+.page-messagerie .older-year span {
+    padding-bottom: 7.5px;
+    padding-right: 5px;
+    vertical-align: middle;
+}
+.page-messagerie .older-year .btn.btn-sm.dropdown-toggle {
+    width: 200px;
+    text-align: right;
+}
 
+
+.eleve-note .btn-encart:hover {
+    background: none;
+}
+.eleve-note .moyennegenerale-valeur,
+.eleve-note .moyennegeneralelibelle {
+    color: #9ebbf2;
+}
+.eleve-note .table.relevemoyenne > tbody > tr.groupematiere > td {
+    background: #444;
+}
+.table > tbody > tr > td,
+.table > tbody > tr > td + td,
+.eleve-note .table.relevemoyenne > tbody > tr > td + td {
+    border-color: #757575;
+}
+.eleve-note .table.relevemoyenne th.moyennelibelle {
+    display: none;
+}
+
+svg rect.highcharts-background,
+svg path[fill="rgba(249, 249, 249, .85)"],
+svg .highcharts-legend > rect {
+    fill: #242424;
+}
+svg text {
+    fill: #acacac !important;
+}
+svg path[fill="#000000"] {
+    fill: #fff;
+}
+svg path[stroke="#000000"] {
+    stroke: #fff;
+}
+svg .highcharts-series-group .highcharts-series.highcharts-tracker rect,
+svg rect[fill="#7CB5EC"] {
+    fill: #25a;
+    stroke: none;
+}
 
 /** Optionnel **/
 #nom-etb img {
