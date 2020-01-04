@@ -7,7 +7,7 @@
 @updateURL     https://raw.githubusercontent.com/CustomStyles/Dark-EcoleDirecte/master/style.user.css
 @description   This style is designed to work on version 3.6.1 of the EcoleDirecte site, the style may no longer work correctly following updates of it.
 @license       CC-BY-SA-4.0
-@advanced text logo-invert "Color inversion rate of the establishment's logo (82 for logos with a white background)" "0"
+@advanced text logo-invert "Color inversion rate of the establishment's logo (82% for logos with a white background)" "0%"
 ==/UserStyle== */
 @-moz-document domain("ecoledirecte.com") {
 	/*!
@@ -271,8 +271,8 @@
 		stroke: none;
 	}
 
-	/** Optionnel **/
+	/** Options **/
 	#nom-etb img {
-		filter: invert(/*[[logo-invert]]*/%);
+		filter: invert(/*[[logo-invert]]*/);
 	}
 }

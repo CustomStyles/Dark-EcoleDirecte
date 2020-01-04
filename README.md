@@ -11,6 +11,6 @@ Then you can acquire this theme using one of these methods:<br/>
 📦 [Install manually from GitHub](style.css) (Mozilla format) which requires manual updates and no customization can be done.<br/>
 
 ## Screenshot
-|                                          |                                          |                                          |
+|Login                                     |Home                                      |Homework                                  |
 |:----------------------------------------:|:----------------------------------------:|:----------------------------------------:|
 |![Login](images/login.png)                |![Home](images/home.png)                  |![Homework](images/homework.png)          |
