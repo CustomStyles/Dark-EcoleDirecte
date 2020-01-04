@@ -1,0 +1,152 @@
+@-moz-document domain("ecoledirecte.com") {
+:root {
+    --light-primary-color: #0779b3;
+    --dark-primary-color: #005a88;
+}
+body {
+    background-color: #1c1c1c;
+    color: #fff;
+}
+.cg-busy-backdrop {
+    background-color: transparent;
+}
+.spinner > div {
+    background-color: #c8c8c8;
+}
+a,
+a:link,
+a:focus,
+a:hover {
+    color: #fff;
+}
+.version-site {
+    color: #595959;
+}
+
+.login-container #bloc-connexion input[type="password"],
+.login-container #bloc-connexion input[type="text"],
+#pb-connexion,
+#footer ul li a,
+.cahierdetexte li.onglet-jour a,
+.cahierdetexte li.onglet-secondary a,
+.page-messagerie .inbox-nav li.active,
+.page-messagerie .messages-listing,
+.page-messagerie .message-detail,
+.page-messagerie .inbox-nav li:hover,
+.documents-a-telecharger #docsATelcharger .liste-docs h4,
+.page-situation-financiere .resume {
+    background: #2d2d2d !important;
+    color: white;
+}
+.btn-info {
+    background-color: #0072b7;
+    border: none;
+}
+.btn-default.active,
+.btn-default:active,
+.btn-default:hover,
+.open > .dropdown-toggle.btn-default {
+    color: #036eae;
+}
+
+#nom-etb {
+    background: #2d2d2d;
+    box-shadow: 0 0 5px 3px #2d2d2d;
+}
+#header-commun .navbar {
+    background: #111;
+}
+
+.container-bg {
+    background: #242424;
+    border: 0;
+    box-shadow: none;
+}
+.container-footer,
+.cdtnavigation,
+.ed-card {
+    background: #3a3a3a;
+    border: 0;
+}
+.nav-tabs {
+    border-bottom: 0;
+}
+.nav-tabs > li > a {
+    border: 1px solid #3a3a3a;
+}
+.nav-tabs.no-shadow > li.active > a {
+    border-color: transparent;
+    box-shadow: none;
+    color: white;
+    background: #6399ff;
+}
+.nav-tabs-container-bg > li > a:hover {
+    background: transparent;
+}
+.nav-tabs > li.active::after {
+    display: none;
+}
+.table > tbody > tr:hover > td {
+    background: #2f2f2f;
+}
+
+.message-item .message-overlay {
+    background: #313131;
+    border: 2px solid #3a3a3a;
+}
+.message-item .message-overlay i {
+    filter: grayscale(100) invert(100);
+}
+.dhx_scale_bar,
+.dhx_scale_hour,
+.dhx_multi_day,
+.dhx_multi_day_icon,
+.dhx_multi_day_icon_small {
+    color: #cecece;
+    background-color: #333;
+}
+.dhx_cal_container div.dhx_cal_event_line {
+    background: #575757 !important;
+    border-radius: 0;
+}
+.dhx_cal_container div.dhx_cal_event_line > span {
+    color: white !important;
+}
+.dhx_cal_container .dhx_scale_holder_now,
+.dhx_cal_container .dhx_scale_holder {
+    background: #333;
+}
+.dhx_cal_navline .dhx_cal_prev_button,
+.dhx_cal_navline .dhx_cal_next_button {
+    filter: invert(100);
+}
+
+.cahierdetexte .list-group-item:hover {
+    background: #0000000f;
+}
+.picker-day.picker-empty,
+.picker-day.picker-empty:hover,
+.picker-day.picker-selected,
+.picker-day:not(.picker-off):not(.picker-empty):hover {
+    background-color: #2f2f2f;
+    color: white;
+}
+.picker-day,
+.picker-day.picker-off,
+.picker-day.picker-off:hover {
+    background-color: #3e3e3e;
+    color: white;
+}
+
+.page-messagerie .un-message.active:hover,
+.page-messagerie .un-message.active,
+.page-messagerie .un-message:hover {
+    background: #4b4b4b;
+}
+
+
+/** Optionnel **/
+#nom-etb img {
+    filter: invert(/*[[logo-invert]]*/%);
+}
+}
