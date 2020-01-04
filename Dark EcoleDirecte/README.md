@@ -2,8 +2,8 @@
 A dark theme for EcoleDirecte (v3.6.1)
 
 ## Installation
-Install Stylus if you are using Firefox, Chrome or Opera.
-If you are on Safari, install Cascadea.<br/>
+Install [Stylus](https://add0n.com/stylus.html) if you are using Firefox, Chrome or Opera.
+If you are on Safari, install [Cascadea](https://cascadea.app/).<br/>
 
 Then you can acquire this theme using one of these methods:<br/>
 📦 [Install the usercss](https://raw.githubusercontent.com/EvanG-Styles/UserStyles/master/Dark%20EcoleDirecte/style.user.css) which supports automatic updates and personalization in real time.<br/>
