@@ -2,7 +2,7 @@
 @name          Dark EcoleDirecte
 @namespace     EvanG
 @author        EvanG
-@version       2020.1.5-2
+@version       2020.1.5-3
 @homepageURL   https://github.com/CustomStyles/Dark-EcoleDirecte/
 @updateURL     https://raw.githubusercontent.com/CustomStyles/Dark-EcoleDirecte/master/style.user.css
 @description   This style is designed to work on version 3.6.1 of the EcoleDirecte site, the style may no longer work correctly following updates of it.
@@ -84,7 +84,7 @@
     .ed-menu {
         border-bottom-color: var(--light-primary-color);
     }
-    .ed-menu-image-wrapper > div {
+    .ed-menu-eleve .ed-menu-image-wrapper > div {
         background-color: var(--light-primary-color) !important;
     }
     .ed-menu:not(.active) .ed-menu-image-wrapper > div::before {
