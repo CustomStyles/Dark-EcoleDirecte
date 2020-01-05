@@ -2,7 +2,7 @@
 @name          Dark EcoleDirecte
 @namespace     EvanG
 @author        EvanG
-@version       2020.1.5-3
+@version       2020.1.5-4
 @homepageURL   https://github.com/CustomStyles/Dark-EcoleDirecte/
 @updateURL     https://raw.githubusercontent.com/CustomStyles/Dark-EcoleDirecte/master/style.user.css
 @description   This style is designed to work on version 3.6.1 of the EcoleDirecte site, the style may no longer work correctly following updates of it.
@@ -81,6 +81,7 @@
         color: #036eae;
     }
 
+    /* Menu */
     .ed-menu {
         border-bottom-color: var(--light-primary-color);
     }
@@ -91,8 +92,11 @@
         background: var(--light-primary-color);
     }
     .all-badge {
-        bottom: 20px;
+        bottom: 17.5px;
         right: 0;
+    }
+    #menu-part:hover .all-badge {
+        bottom: 14.5px;
     }
     .ed-menu:not(.active) .ed-menu-badge {
         right: 25px;
@@ -102,7 +106,7 @@
         background: none;
     }
     #menu-part:hover .ed-menu:not(.active) .all-badge .ed-menu-badge {
-        right: 45px;
+        right: 48px;
         left: auto;
     }
 
