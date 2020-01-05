@@ -2,34 +2,40 @@
 @name          Dark EcoleDirecte
 @namespace     EvanG
 @author        EvanG
-@version       2020.1.4
+@version       2020.1.5
 @homepageURL   https://github.com/CustomStyles/Dark-EcoleDirecte/
 @updateURL     https://raw.githubusercontent.com/CustomStyles/Dark-EcoleDirecte/master/style.user.css
 @description   This style is designed to work on version 3.6.1 of the EcoleDirecte site, the style may no longer work correctly following updates of it.
 @license       CC-BY-SA-4.0
-@advanced text logo-invert "Color inversion rate of the establishment's logo (82% for logos with a white background)" "0%"
+
+@advanced dropdown establishment-logo "Rendering of the establishment's logo" {
+    nothing "Change nothing" <<<EOT
+        filter: none; EOT;
+    invert "Invert at 82%" <<<EOT
+        filter: invert(82%); EOT;
+    filter "Super filter combo" <<<EOT
+        filter: hue-rotate(200deg) invert(82%) saturate(350%); EOT;
+    multiply "Multiply and saturate" <<<EOT
+        mix-blend-mode: multiply; 
+        filter: saturate(300%); EOT;
+}
 ==/UserStyle== */
 @-moz-document domain("ecoledirecte.com") {
     /*!
-        Dark EcoleDirecte v3.6.1 (2020-01-04)
+		Dark EcoleDirecte v3.6.1 (2020-01-05)
 
-        Repository: https://github.com/CustomStyles/Dark-EcoleDirecte/
-                    You are free to contribute or report any problems with the style.
-        License:    https://creativecommons.org/licenses/by-sa/4.0/
-    */
+		Repository: https://github.com/CustomStyles/Dark-EcoleDirecte/
+					You are free to contribute or report any problems with the style.
+		License:	https://creativecommons.org/licenses/by-sa/4.0/
+	*/
     :root {
         --light-primary-color: #0779b3;
         --dark-primary-color: #005a88;
+        --secondary-color: #549cf9;
     }
     body {
         background-color: #1c1c1c;
         color: #fff;
-    }
-    .cg-busy-backdrop {
-        background-color: transparent;
-    }
-    .spinner > div {
-        background-color: #c8c8c8;
     }
     a,
     a:link,
@@ -37,10 +43,13 @@
     a:hover {
         color: #fff;
     }
-    .version-site {
-        color: #595959;
+    .form-control:focus {
+        box-shadow: none;
     }
     .form-control,
+    input[type="password"]:focus,
+    input[type="text"]:focus,
+    textarea:focus,
     .page-messagerie .search input,
     .page-messagerie .search button,
     .page-messagerie .refresh .btn {
@@ -61,6 +70,24 @@
         background: #333;
         color: #ccc;
     }
+    .btn-info {
+        background-color: #0072b7;
+        border: none;
+    }
+    .btn-default.active,
+    .btn-default:active,
+    .btn-default:hover,
+    .open > .dropdown-toggle.btn-default {
+        color: #036eae;
+    }
+
+    /* Chargements */
+    .cg-busy-backdrop {
+        background-color: transparent;
+    }
+    .spinner > div {
+        background-color: #c8c8c8;
+    }
 
     .login-container #bloc-connexion input[type="password"],
     .login-container #bloc-connexion input[type="text"],
@@ -77,20 +104,17 @@
         background: #2d2d2d !important;
         color: white;
     }
-    .btn-info {
-        background-color: #0072b7;
-        border: none;
-    }
-    .btn-default.active,
-    .btn-default:active,
-    .btn-default:hover,
-    .open > .dropdown-toggle.btn-default {
-        color: #036eae;
+    .version-site {
+        color: #595959;
     }
 
+    /* Établissement */
     #nom-etb {
         background: #2d2d2d;
         box-shadow: 0 0 5px 3px #2d2d2d;
+    }
+    #nom-etb img {
+        /*[[establishment-logo]]*/
     }
     #header-commun .navbar {
         background: #111;
@@ -104,7 +128,8 @@
     }
     .container-footer,
     .cdtnavigation,
-    .ed-card {
+    .ed-card,
+    .modal-content .modal-footer .footer {
         background: #3a3a3a;
         border: 0;
     }
@@ -115,9 +140,11 @@
         margin: 0;
     }
     .nav-tabs > li > a,
-    .btn-default {
+    .btn-default,
+    .btn-default:focus {
         border: 1px solid #3a3a3a;
         color: #a8a8a8;
+        background: 0;
     }
     .nav-tabs > li > a {
         border-radius: 0;
@@ -196,6 +223,7 @@
         filter: invert(100);
     }
 
+    /* Cahier de textes */
     .cahierdetexte .list-group-item:hover {
         background: #0000000f;
     }
@@ -213,6 +241,7 @@
         color: white;
     }
 
+    /* Messagerie */
     .page-messagerie .un-message.active:hover,
     .page-messagerie .un-message.active,
     .page-messagerie .un-message:hover {
@@ -230,8 +259,11 @@
         width: 200px;
         text-align: right;
     }
+    .page-messagerie .message-detail .view-message p span {
+        color: white !important;
+    }
 
-
+    /* Notes et Moyennes */
     .eleve-note .btn-encart:hover {
         background: none;
     }
@@ -250,7 +282,6 @@
     .eleve-note .table.relevemoyenne th.moyennelibelle {
         display: none;
     }
-
     svg rect.highcharts-background,
     svg path[fill="rgba(249, 249, 249, .85)"],
     svg .highcharts-legend > rect {
@@ -269,10 +300,5 @@
     svg rect[fill="#7CB5EC"] {
         fill: #25a;
         stroke: none;
-    }
-
-    /** Options **/
-    #nom-etb img {
-        filter: invert(/*[[logo-invert]]*/);
     }
 }
