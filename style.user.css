@@ -2,7 +2,7 @@
 @name          Dark EcoleDirecte
 @namespace     EvanG
 @author        EvanG
-@version       2020.1.5-4
+@version       2020.1.6
 @homepageURL   https://github.com/CustomStyles/Dark-EcoleDirecte/
 @updateURL     https://raw.githubusercontent.com/CustomStyles/Dark-EcoleDirecte/master/style.user.css
 @description   This style is designed to work on version 3.6.1 of the EcoleDirecte site, the style may no longer work correctly following updates of it.
@@ -22,7 +22,7 @@
 ==/UserStyle== */
 @-moz-document domain("ecoledirecte.com") {
     /*!
-		Dark EcoleDirecte v3.6.1 (2020-01-05)
+		Dark EcoleDirecte v3.6.1 (2020-01-06)
 
 		Repository: https://github.com/CustomStyles/Dark-EcoleDirecte/
 					You are free to contribute or report any problems with the style.
@@ -110,6 +110,26 @@
         left: auto;
     }
 
+    /* En tête */
+    #header-commun .navbar {
+        background: #0f5593;
+    }
+    #header-commun .navbar li {
+        margin: 0;
+    }
+    #header-commun .navbar li a {
+        box-shadow: none;
+    }
+    #header-commun .navbar li a#user-account-link {
+        border-radius: 50px 0 0 50px;
+    }
+    #header-commun .navbar li a.logout {
+        border-radius: 0 50px 50px 0;
+    }
+    .tooltip.bottom .tooltip-inner {
+        background: var(--secondary-color);
+    }
+
     /* Chargements */
     .cg-busy-backdrop {
         background-color: transparent;
@@ -145,9 +165,6 @@
     #nom-etb img {
         /*[[establishment-logo]]*/
     }
-    #header-commun .navbar {
-        background: #111;
-    }
 
     .container-bg,
     .modal-content {
@@ -159,7 +176,7 @@
     .cdtnavigation,
     .ed-card,
     .modal-content .modal-footer .footer {
-        background: #3a3a3a;
+        background: #333;
         border: 0;
     }
     .nav-tabs {
@@ -221,6 +238,7 @@
         background: #2f2f2f;
     }
 
+    /* Quoi de neuf ? */
     .message-item .message-overlay {
         background: #313131;
         border: 2px solid #3a3a3a;
@@ -250,6 +268,25 @@
     .dhx_cal_navline .dhx_cal_prev_button,
     .dhx_cal_navline .dhx_cal_next_button {
         filter: invert(100);
+    }
+
+    /* Vos informations */
+    .item + .item {
+        border: none;
+    }
+
+    /* Situation financière */
+    #compte .row {
+        margin: 0;
+    }
+    #portemonaie,
+    #portemonaie .vAccordion--default v-pane-header {
+        border: none;
+    }
+    .alert-info {
+        background: #333;
+        border: 0;
+        color: white;
     }
 
     /* Cahier de textes */
