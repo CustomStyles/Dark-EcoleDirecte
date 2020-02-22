@@ -2,7 +2,7 @@
 @name          Dark EcoleDirecte
 @namespace     EvanG
 @author        EvanG
-@version       2020.1.6
+@version       2020.2.22
 @homepageURL   https://github.com/CustomStyles/Dark-EcoleDirecte/
 @updateURL     https://raw.githubusercontent.com/CustomStyles/Dark-EcoleDirecte/master/style.user.css
 @description   This style is designed to work on version 3.6.1 of the EcoleDirecte site, the style may no longer work correctly following updates of it.
@@ -22,7 +22,7 @@
 ==/UserStyle== */
 @-moz-document domain("ecoledirecte.com") {
     /*!
-		Dark EcoleDirecte v3.6.1 (2020-01-06)
+		Dark EcoleDirecte v3.6.1 (2020-02-22)
 
 		Repository: https://github.com/CustomStyles/Dark-EcoleDirecte/
 					You are free to contribute or report any problems with the style.
@@ -293,18 +293,31 @@
     .cahierdetexte .list-group-item:hover {
         background: #0000000f;
     }
-    .picker-day.picker-empty,
-    .picker-day.picker-empty:hover,
-    .picker-day.picker-selected,
-    .picker-day:not(.picker-off):not(.picker-empty):hover {
-        background-color: #2f2f2f;
-        color: white;
+    .picker-days-row {
+        border: 1px solid #3e3e3e;
     }
-    .picker-day,
-    .picker-day.picker-off,
-    .picker-day.picker-off:hover {
+    .picker-days-week-row > div {
+        margin-bottom: 0.25em;
+    }
+    .picker-day {
         background-color: #3e3e3e;
         color: white;
+        border: none;
+    }
+    .picker-day:not(.picker-off):not(.picker-empty):hover {
+        background-color: #00496f;
+    }
+    .picker-day.picker-selected {
+        background-color: var(--dark-primary-color);
+    }
+    .picker-day.picker-empty,
+    .picker-day.picker-empty:hover {
+        background-color: #2b2b2b;
+        color: white;
+    }
+    .picker-day.picker-off,
+    .picker-day.picker-off:hover {
+        background-color: #333;
     }
 
     /* Messagerie */
