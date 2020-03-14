@@ -2,7 +2,7 @@
 @name          Dark EcoleDirecte
 @namespace     EvanG
 @author        EvanG
-@version       2020.2.26
+@version       2020.3.14
 @homepageURL   https://github.com/CustomStyles/Dark-EcoleDirecte/
 @updateURL     https://raw.githubusercontent.com/CustomStyles/Dark-EcoleDirecte/master/style.user.css
 @description   This style is designed to work on version 3.6.1 of the EcoleDirecte site, the style may no longer work correctly following updates of it.
@@ -22,7 +22,7 @@
 ==/UserStyle== */
 @-moz-document domain("ecoledirecte.com") {
     /*!
-		Dark EcoleDirecte v3.6.1 (2020-02-26)
+		Dark EcoleDirecte v3.6.1 (2020-03-14)
 
 		Repository: https://github.com/CustomStyles/Dark-EcoleDirecte/
 					You are free to contribute or report any problems with the style.
@@ -219,7 +219,9 @@
     .open > .dropdown-toggle.btn-default:hover,
     .btn-danger-color,
     .btn-danger-color:focus,
-    .btn-danger-color:hover {
+    .btn-danger-color:hover,
+    .cloud .btn-breadcrumb .btn,
+    .cloud .btn-breadcrumb .btn:hover {
         border-color: transparent;
         box-shadow: none;
         color: white;
@@ -385,5 +387,10 @@
     svg rect[fill="#7CB5EC"] {
         fill: #25a;
         stroke: none;
+    }
+
+    /* Cloud */
+    .table .table {
+        background-color: #333;
     }
 }
