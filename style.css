@@ -1,6 +1,6 @@
 @-moz-document domain("ecoledirecte.com") {
     /*!
-		Dark EcoleDirecte v3.6.1 (2020-02-26)
+		Dark EcoleDirecte v3.6.1 (2020-03-25)
 
 		Repository: https://github.com/CustomStyles/Dark-EcoleDirecte/
 					You are free to contribute or report any problems with the style.
@@ -57,6 +57,11 @@
     .btn-default:hover,
     .open > .dropdown-toggle.btn-default {
         color: #036eae;
+    }
+    .modal-body .table > tbody > tr > td,
+    .modal-body .table > tbody > tr > th {
+        background: #333;
+        border-color: #424242;
     }
 
     /* Menu */
@@ -194,7 +199,9 @@
     .open > .dropdown-toggle.btn-default:hover,
     .btn-danger-color,
     .btn-danger-color:focus,
-    .btn-danger-color:hover {
+    .btn-danger-color:hover,
+    .cloud .btn-breadcrumb .btn,
+    .cloud .btn-breadcrumb .btn:hover {
         border-color: transparent;
         box-shadow: none;
         color: white;
@@ -251,6 +258,15 @@
     /* Vos informations */
     .item + .item {
         border: none;
+    }
+
+    /* Documents */
+    #docsATelcharger {
+        column-count: 2;
+    }
+    .documents-a-telecharger #docsATelcharger .liste-docs {
+        break-inside: avoid;
+        width: 100%;
     }
 
     /* Situation financière */
@@ -342,6 +358,12 @@
     .eleve-note .table.relevemoyenne th.moyennelibelle {
         display: none;
     }
+    .eleve-note .eval-abs-disp {
+        border: 0;
+        background: 0;
+        width: 14px;
+        margin: 0;
+    }
     svg rect.highcharts-background,
     svg path[fill="rgba(249, 249, 249, .85)"],
     svg .highcharts-legend > rect {
@@ -360,5 +382,10 @@
     svg rect[fill="#7CB5EC"] {
         fill: #25a;
         stroke: none;
+    }
+
+    /* Cloud */
+    .table .table {
+        background-color: #333;
     }
 }
