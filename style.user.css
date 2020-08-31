@@ -2,7 +2,7 @@
 @name          Dark EcoleDirecte
 @namespace     EvanG
 @author        EvanG
-@version       2020.8.29
+@version       2020.8.31
 @homepageURL   https://github.com/CustomStyles/Dark-EcoleDirecte/
 @updateURL     https://raw.githubusercontent.com/CustomStyles/Dark-EcoleDirecte/master/style.user.css
 @description   This style is designed to work on version 3.7.1 of the EcoleDirecte site, the style may no longer work correctly following updates of it.
@@ -22,7 +22,7 @@
 ==/UserStyle== */
 @-moz-document domain("ecoledirecte.com") {
     /*!
-		Dark EcoleDirecte v3.7.1 (2020-08-29)
+		Dark EcoleDirecte v3.7.1 (2020-08-31)
 
 		Repository: https://github.com/CustomStyles/Dark-EcoleDirecte/
 					You are free to contribute or report any problems with the style.
@@ -431,6 +431,13 @@
     .table > thead > tr.info > th,
     .table > thead > tr > td.info,
     .table > thead > tr > th.info {
-        background-color: #555;
+        background-color: transparent;
+    }
+    .table-hover > tbody > tr.info:hover > td,
+    .table-hover > tbody > tr.info:hover > th,
+    .table-hover > tbody > tr:hover > .info,
+    .table-hover > tbody > tr > td.info:hover,
+    .table-hover > tbody > tr > th.info:hover {
+        background-color: #2f2f2f;
     }
 }
