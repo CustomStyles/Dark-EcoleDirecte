@@ -2,7 +2,7 @@
 @name          Dark EcoleDirecte
 @namespace     EvanG
 @author        EvanG
-@version       2020.8.31
+@version       2020.9.9
 @homepageURL   https://github.com/CustomStyles/Dark-EcoleDirecte/
 @updateURL     https://raw.githubusercontent.com/CustomStyles/Dark-EcoleDirecte/master/style.user.css
 @description   This style is designed to work on version 3.7.1 of the EcoleDirecte site, the style may no longer work correctly following updates of it.
@@ -22,7 +22,7 @@
 ==/UserStyle== */
 @-moz-document domain("ecoledirecte.com") {
     /*!
-		Dark EcoleDirecte v3.7.1 (2020-08-31)
+		Dark EcoleDirecte v3.7.1 (2020-09-09)
 
 		Repository: https://github.com/CustomStyles/Dark-EcoleDirecte/
 					You are free to contribute or report any problems with the style.
@@ -283,6 +283,13 @@
     /* Vos informations */
     .item + .item {
         border: none;
+    }
+    .form-horizontal .control-label {
+        padding: 0;
+    }
+    .conjoint.ed-card h3 {
+        display: inline-block;
+        margin-right: 5px;
     }
 
     /* Documents */
