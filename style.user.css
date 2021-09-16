@@ -2,10 +2,10 @@
 @name          Dark EcoleDirecte
 @namespace     EvanG
 @author        EvanG
-@version       2020.9.29
+@version       2021.9.16
 @homepageURL   https://github.com/CustomStyles/Dark-EcoleDirecte/
 @updateURL     https://raw.githubusercontent.com/CustomStyles/Dark-EcoleDirecte/master/style.user.css
-@description   This style is designed to work on version 3.7.1 of the EcoleDirecte site, the style may no longer work correctly following updates of it.
+@description   This style is designed to work on version 3.8.0-13 of the EcoleDirecte site, the style may no longer work correctly following updates of it.
 @license       CC-BY-SA-4.0
 
 @advanced dropdown establishment-logo "Rendering of the establishment's logo" {
@@ -22,7 +22,7 @@
 ==/UserStyle== */
 @-moz-document domain("ecoledirecte.com") {
     /*!
-		Dark EcoleDirecte v3.7.1 (2020-09-29)
+		Dark EcoleDirecte v3.8.0-13 (2021-09-16)
 
 		Repository: https://github.com/CustomStyles/Dark-EcoleDirecte/
 					You are free to contribute or report any problems with the style.
@@ -135,10 +135,11 @@
         background: var(--secondary-color);
     }
     #header-commun .navbar li a#user-account-link {
-        background: var(--lt-color-gray-800);
+        background: var(--lt-color-gray-700);
+        color: var(--secondary-color);
     }
     #header-commun .navbar li a.logout {
-        color: var(--lt-color-gray-800);
+        color: var(--lt-color-gray-700);
     }
 
     /* Chargements */
