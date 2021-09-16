@@ -134,6 +134,12 @@
     .tooltip.bottom .tooltip-inner {
         background: var(--secondary-color);
     }
+    #header-commun .navbar li a#user-account-link {
+        background: var(--lt-color-gray-800);
+    }
+    #header-commun .navbar li a.logout {
+        color: var(--lt-color-gray-800);
+    }
 
     /* Chargements */
     .cg-busy-backdrop {
